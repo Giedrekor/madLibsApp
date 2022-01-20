@@ -1,5 +1,8 @@
 "use strict";
 
+// array ao user inputs
+let userInputs = [];
+
 // number of replacements
 let numberOfQuestions = 10;
 
@@ -28,12 +31,17 @@ for (let i = numberOfQuestions; i >= 0; i--) {
   console.log(
     questionArray[questionCounter] + `(${numberOfQuestions} questions left)`
   );
+
+  userInputs.push(
+    prompt(
+      questionArray[questionCounter] +
+        `... (${numberOfQuestions} questions left)`
+    )
+  );
+  console.log(userInputs);
   questionCounter++;
   numberOfQuestions--;
 }
-
-// array ao user inputs
-let userInputs = [];
 
 // story text
 let originalStory = `<h2>A Trip to the Beach</h2><p>Summer trips to the beach are so ${userInputs[0]}! Pack your ${userInputs[1]}, a ${userInputs[2]} to dry yourself off, and ${userInputs[3]} to prevent sunburn. Be sure to bring a ${userInputs[4]} to ${userInputs[5]} with in the water, too. You can bring a beach picnic, with ${userInputs[6]}, ${userInputs[7]} and ${userInputs[8]}. It's fun to ${userInputs[9]} for hours in the water, and to see ${userInputs[10]} sail past in the distance.</p>`;
