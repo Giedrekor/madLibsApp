@@ -1,0 +1,8 @@
+div {
+  border: 5px solid green;
+  background-color: yellow;
+  background-image: linear-gradient(to bottom right, red, yellow);
+  color: black;
+  padding: 20px;
+  line-height: 1.5;
+}
