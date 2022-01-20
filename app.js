@@ -23,9 +23,13 @@ let questionArray = [
 ];
 
 for (let i = numberOfQuestions; i >= 0; i--) {
-  console.log(i);
-  console.log(questionCounter++);
-  console.log(questionArray[questionCounter]);
+  // console.log(i);
+  // console.log(questionCounter++);
+  console.log(
+    questionArray[questionCounter] + `(${numberOfQuestions} questions left)`
+  );
+  questionCounter++;
+  numberOfQuestions--;
 }
 
 // array ao user inputs
