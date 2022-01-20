@@ -3,6 +3,9 @@
 // number of replacements
 let numberOfQuestions = 10;
 
+// current question
+let questionCounter = 0;
+
 // input text
 let inputText = `Please enter a`;
 let questionArray = [
@@ -20,7 +23,9 @@ let questionArray = [
 ];
 
 for (let i = numberOfQuestions; i >= 0; i--) {
-  // console.log(i);
+  console.log(i);
+  console.log(questionCounter++);
+  console.log(questionArray[questionCounter]);
 }
 
 // array ao user inputs
